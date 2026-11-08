@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% for date in dates %}
+    <a href="{% url 'dates_with_course' date.course.id %}">{{ date }}</a> <br>
+{% endfor %}
+
+</body>
+</html>
